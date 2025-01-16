@@ -1,0 +1,50 @@
+h3{
+    height: 50px;
+    width:100%;
+    background:url("hinh/h3.png") no-repeat 0 100%;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    margin: 0;
+    padding: 10px 10px 25px 45px;
+    background:url("hinh/ul.png") no-repeat 0 100%;
+    list-style-image: url("hinh/li.png");
+}
+/* unvisited link */
+a:link {
+    color: red;
+}
+/* visited link */
+a:visited{
+    color:green;
+}
+/* mousse over link */
+a:hover{
+    color:hotpink;
+    padding-left: 10px;
+}
+/* selected link */
+a:active{
+    color:blue;
+}
+/* Đặt display của container là flex để kích hoạt Flexbox */
+.container {
+    display: flex;
+    /* Đặt khoảng cách giữa các item */
+    gap: 10px;
+    /* Canh giữa theo chiều ngang */
+    justify-content: center;
+    /* Canh giữa theo chiều dọc */
+    align-items: center;
+    /* Chiều cao của container */
+    height: 100vh;
+}
+
+/* Style cho từng item */
+.item {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #000;
+}

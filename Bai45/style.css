@@ -1,0 +1,139 @@
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+
+    .online-scrapbooks {
+        color: blue;
+        text-decoration: underline;
+    }
+
+    .container {
+        max-width: 960px;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    header {
+        background-image: url('hinh/scrapbooks.png');
+        background-repeat: no-repeat;
+        background-position: right;
+        padding: 20px 0;
+        background-size: 300px;
+        text-align: center;
+    }
+    hr {
+        border-top: 1px solid #FFB800; /* Màu vàng */
+    }
+    .logo h1 {
+        margin: 0;
+        font-size: 2em;
+        color: #333; /* Màu chữ logo */
+    }
+    
+    .content-wrapper {
+        display: flex;
+    }
+    
+    nav {
+        background-image: url(hinh/back.jpg);
+        padding: 15px;
+        width: 160px;
+        flex: 0 0 25%;
+        position: fixed; 
+        top: 70px;
+        left: 0; /* Thay đổi vị trí thành 'left' */
+        height: 100vh; 
+        overflow-y: auto; 
+    }
+    p {
+        font-family: Times New Roman;
+        color: #8B0000; /* Màu đỏ đô */
+    }
+    /* Dấu chấm trước mỗi mục trong danh sách điều hướng */
+    nav ul li a::before {
+        content: "• "; /* Dấu chấm ngang */
+        margin-right: 8px; /* Khoảng cách giữa dấu chấm và chữ */
+        color: darkred; /* Giữ màu đỏ đậm cho dấu chấm */
+        text-decoration: none; /* Loại bỏ gạch chân cho dấu chấm */
+        display: inline-block;
+    }
+  
+  /* Các kiểu dáng khác cho nav và ul */
+    nav ul {
+        list-style-type: none; /* Loại bỏ dấu chấm mặc định của trình duyệt */
+        padding: 0;
+    }
+  
+    nav ul li {
+        margin: 5px 0; /* Khoảng cách giữa các mục */
+    }
+    
+    nav ul li a {
+        text-decoration: underline; /* Thêm gạch chân cho chữ trong liên kết */
+        color: blue; /* Đặt màu chữ là xanh dương */
+        font-weight: bold; /* Chữ đậm */
+    }
+    
+    main {
+        flex: 1;
+        padding: 15px;
+        background-color: #fff;
+        margin-left: 25%; /* Tạo khoảng cách cho sidebar */ 
+    }
+    
+    main h2 {
+        color: #FFB800;
+    }
+    
+    main h3 {
+        color: #555;
+    }
+    
+    .basic-materials {
+        width: 200px; /* Chiều rộng của khung */
+        height: 200px; /* Chiều cao của khung, để tạo thành hình vuông */
+        padding: 10px; /* Khoảng cách giữa nội dung và viền */
+        border: 2px solid #000; /* Đường viền đen quanh khung */
+        box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+        overflow: auto; /* Thêm thanh cuộn nếu nội dung vượt quá khung */  
+        background-color:  #FFF5E1;
+        border-top: 4px solid #FFB800; /* Viền trên màu cam đậm */
+        border-right: 4px solid #000; /* Viền phải màu đen */
+        border-bottom: 4px solid #000; /* Viền dưới màu đen */
+        border-left: 4px solid #FFB800; /* Viền trái màu cam đậm */
+        border-radius: 0;
+        width:35%;
+        float:right;
+        border-radius: 5px; /* Tạo khung vuông */
+    }
+    
+    .basic-materials h2 {
+        text-align: left;
+        font-size: 23px; /* Chỉnh kích thước chữ tiêu đề nhỏ lại */
+        margin-top: 0;
+    }
+
+    .basic-materials ul {
+        list-style: square;
+        padding-left: 20px;
+        color:#8B0000;
+        font-size: 8pt;
+        margin-left: 0;
+    }
+    
+    footer {
+        padding: 10px 0;
+        margin-top: 20px;
+        text-align: center;
+        color: #FFB800;
+    }
+
+    .footer-container {
+        text-align: center;
+        margin: 0 auto;
+        width: 80%; /* Điều chỉnh chiều rộng nếu cần */
+        background-color: #f0f0f0;
+    }

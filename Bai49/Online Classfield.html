@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Classifieds Search Form</title>
+<style>
+body {
+  background-color: rgb(179, 230, 234);
+  font-family:'Times New Roman', Times, serif;
+}
+h1 {
+  color: red;
+  text-align: left;
+}
+
+form {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.option-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Online Classifieds Search Form</h1>
+<hr/>
+
+<form>
+  <h2>1) Search for a classified in the following sections:</h2>
+<table>
+    <tr>
+        <td>
+            <div class="option-group">
+                <input type="radio" id="employment" name="section" value="Employment">
+                <label for="employment">Employment</label>
+              </div>
+              <div class="option-group">
+                <input type="radio" id="forSale" name="section" value="For Sale" checked>
+                <label for="forSale">For Sale</label>
+              </div>
+              <div class="option-group">
+                <input type="radio" id="housing" name="section" value="Housing">
+                <label for="housing">Housing</label>
+              </div>
+
+        </td>
+        <td>
+            <div class="option-group">
+                <input type="radio" id="personal" name="section" value="Personal">
+                <label for="personal">Personal</label>
+            </div>
+              <div class="option-group">
+                <input type="radio" id="miscellaneous" name="section" value="Miscellaneous">
+                <label for="miscellaneous">Miscellaneous</label>
+              </div>
+            
+            
+            
+              <div class="option-group">
+                <input type="radio" id="all" name="section" value="All of the above">
+                <label for="all">All of the above</label>
+              </div>
+        </td>
+    </tr>
+</table>
+  <h2>2) Search the following publications:</h2>
+<table>
+    <tr>
+        <td>
+            <div class="option-group">
+                <input type="checkbox" id="midwestTimes" name="publication" value="Midwest times" checked>
+                <label for="midwestTimes">Midwest times</label>
+              </div>
+            
+              <div class="option-group">
+                <input type="checkbox" id="greatLakesClassifieds" name="publication" value="Great Lakes Classifieds" checked>
+                <label for="greatLakesClassifieds">Great Lakes Classifieds</label>
+              </div>
+        </td>
+        <td>
+            <div class="option-group">
+                <input type="checkbox" id="modernNews" name="publication" value="Modern News">
+                <label for="modernNews">Modern News</label>
+              </div>
+            
+              <div class="option-group">
+                <input type="checkbox" id="middletonDaily" name="publication" value="Middleton Daily">
+                <label for="middletonDaily">Middleton Daily</label>
+              </div>
+        </td>
+        <td>
+            <div class="option-group">
+                <input type="checkbox" id="employmentToday" name="publication" value="Employment Today">
+                <label for="employmentToday">Employment Today</label>
+              </div>
+            
+              <div class="option-group">
+                <input type="checkbox" id="cashtownDailyNews" name="publication" value="Cashtown Daily News">
+                <label for="cashtownDailyNews">Cashtown Daily News</label>
+              </div>
+        </td>
+    </tr>
+</table>
+
+    <div class="option-group">
+    <h2>3) From to   </h2>
+    <input type="date" id="fromDate" name="fromDate">
+    to
+    <input type="date" id="toDate" name="toDate"><br><br>
+    </div>
+
+    <h2>4) Enter a few keywords to describe the classified.</h2>
+    <input type="text" id="keywords" name="keywords"><br><br>
+
+    <h2>5) Click one of the options below:</h2>
+    <button type="submit">
+        <img src="Search.gif" alt="Search"> 
+    </button>
+        <a href="https://www.uel.edu.vn/"><img src="Help.gif" alt="Help"> </a>
+    <button  type="reset"">
+        <img src="Cancel.gif" alt="Cancel"> 
+    </button>
+</form>
+
+</body>
+</html>

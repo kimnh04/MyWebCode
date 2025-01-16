@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Jackson Electronics Registration</title>
+<style>
+body {
+  background-color: rgb(169, 204, 236);
+  font-family:'Times New Roman', Times, serif;
+}
+h1 {
+  color: navy;
+  text-align: center;
+}
+table {
+  width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border-radius: 0%;
+  border-width: 0px;
+}
+
+td {
+  /* border: 1px solid #ccc; */
+  padding: 10px;
+}
+
+    </style>
+    </head>
+<body>
+<center>
+    <img src="hinh/Jackson.gif">
+    <h2>Registration Form</h2>
+    <p>Register your Jackson Electronics product here</p>
+</center>
+
+<table border="0">
+  <tr>
+    <td>First Name:</td>
+    <td><input type="text" id="firstName" name="firstName"></td>
+    <td>Last Name:</td>
+    <td colspan="3"><input type="text" id="lastName" name="lastName"></td>
+  </tr>
+  <tr>
+    <td>Address #1:</td>
+    <td><input type="text" id="address1" name="address1"></td>
+  </tr>
+  <tr>
+    <td>Address #2:</td>
+    <td><input type="text" id="address2" name="address2"></td>
+  </tr>
+  <tr>
+    <td>City:</td>
+    <td><input type="text" id="city" name="city"></td>
+    <td>State:</td>
+    <td><input type="text" id="state" name="state"></td>
+    <td>Zip:</td>
+    <td><input type="text" id="zip" name="zip"></td>
+  </tr>
+
+  <tr>
+    <td>Country:</td>
+    <td>
+      <select id="country" name="country">
+        <option value="USA">United States</option>
+      </select>
+    </td>
+  </tr>
+</table>
+<hr/>
+<table>
+  <tr>
+    <td>Product:</td>
+    <td>
+      <select id="product" name="product">
+        <option value="ScanMaster">ScanMaster</option>
+      </select>
+    </td>
+  </tr>
+  <tr>
+    <td>Date Purchased:</td>
+    <td><input type="date" id="datePurchased" name="datePurchased"></td>
+  </tr>
+  <tr>
+    <td>Serial #:</td>
+    <td><input type="text" id="serial" name="serial"></td>
+  </tr>
+  <tr>
+    <td>Used for:</td>
+    <td>
+      <input type="radio" id="home" name="usage" value="Home"> <label for="home">Home</label><br>
+      <input type="radio" id="business" name="usage" value="Business"> <label for="business">Business</label><br>
+      <input type="radio" id="government" name="usage" value="Government"> <label for="government">Government</label><br>
+    </td>
+    <td>
+        <input type="radio" id="educational" name="usage" value="Educational Institution"> <label for="educational">Educational Institution</label><br>
+        <input type="radio" id="other" name="usage" value="Other"> <label for="other">Other</label>
+    </td>
+  </tr>
+  <tr>
+    <td>System (check all that apply):</td>
+    <td>
+      <input type="checkbox" id="windows" name="system" value="Windows"> <label for="windows">Windows</label><br>
+      <input type="checkbox" id="mac" name="system" value="Macintosh"> <label for="mac">Macintosh</label><br>
+      <input type="checkbox" id="unix" name="system" value="UNIX"> <label for="unix">UNIX</label><br>
+      <input type="checkbox" id="otherSystem" name="system" value="Other"> <label for="otherSystem">Other</label>
+    </td>
+  </tr>
+  </table>
+  <hr/>
+
+  <table>
+  <tr>
+    <td>Comments:</td>
+    <td><textarea id="comments" name="comments"></textarea></td>
+  </tr>
+</table>
+<center>
+<button type="submit">Click to register</button>
+<button type="reset">Click to cancel</button>
+</center>
+
+</body>
+</html>
